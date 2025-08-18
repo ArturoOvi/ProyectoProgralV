@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "David Alonso Acuña Ureña",
+    "rol": "Presidente",
+    "foto": "assets/img/David.jpg",
+    "descripcion": "Miembro de la ASADA de Carit de Puriscal desde 2012, desempeñando diversas funciones, incluyendo la Presidencia y posteriormente la Administración. Actualmente preside la Unión de ASADAS de la Región Central Este (UNARECE) y representa a múltiples organizaciones comunitarias en el territorio, principalmente en áreas relacionadas con el desarrollo comunal, la gestión del recurso hídrico y la conservación del medio ambiente. Experto en liderazgo comunitario, con amplia trayectoria en la coordinación de proyectos locales y el fortalecimiento institucional de asociaciones comunales dedicadas a la gestión del recurso hídrico.",
+    "tipo": "junta_directiva"
+  },
+  {
+    "nombre": "Orlando Esquivel Torres",
+    "rol": "Vicepresidente",
+    "foto": "assets/img/Orlando2.jpg",
+    "descripcion": "Desde el año 2000, es miembro directivo de la ASADA de Labrador de San Mateo, donde actualmente ejerce como Presidente, liderando su desarrollo y fortalecimiento institucional. Desde 2014, preside la Federación de ASADAS del Pacífico Central (FEDEPACE), acumulando más de 25 años de experiencia en organizaciones comunitarias dedicadas al desarrollo y la gestión del recurso hídrico. Experto en liderazgo comunitario y gestión del agua, con amplia trayectoria en procesos de incidencia política desde la FEDEPACE.",
+    "tipo": "junta_directiva"
+  },
+  {
+    "nombre": "Lic. Marco Vinicio Alfaro Solís",
+    "rol": "Vocal",
+    "foto": "assets/img/Marco 2.jpg",
+    "descripcion": "Licenciado en Arquitectura con más de 35 años de experiencia en la gestión comunitaria del agua. Miembro directivo de la ASADA de Santa Gertrudis Centro de Grecia desde 1987, ejerciendo como presidente desde 2011. Desde 2016, preside la Unión de Asociaciones Gestoras por el Ambiente y la Salud (UNAGUAS) y fue miembro de la Junta Directiva de la Confederación Nacional de Federaciones, Ligas y Uniones de ASADAS (2018-2024). Además, integra la Junta Directiva de Agua Tica, el primer fondo de agua en Costa Rica. Experto en liderazgo comunitario, con amplia trayectoria en gestión sostenible del recurso hídrico y en el desarrollo de estrategias que garantizan la calidad y sostenibilidad del agua potable en las comunidades locales.",
+    "tipo": "junta_directiva"
+    
+  },
+  {
+    "nombre": "Ismael Martínez Morera",
+    "rol": "Coordinador",
+    "foto": "assets/img/Orlando2.jpg",
+    "descripcion":"",
+     "tipo": "colaborador"
+  },
+  {
+    "nombre": "Ing. María José Córdoba Ugalde",
+    "rol": "Encargada del área de calidad / Promoción de la igualdad de género",
+    "foto": "assets/img/María.jpg",
+    "descripcion":"Ingeniera en Manejo del Recurso Hídrico con amplia trayectoria en la gestión comunitaria del agua, liderando proyectos, programas y procesos técnicos a lo largo de más de cinco años de trabajo continuo en el sector. Emprendedora y responsable del área de calidad de CAISA, con un enfoque especializado en garantizar la calidad del agua potable y el cumplimiento legal, asesorando de forma directa a más de 35 ASADAS en todo el territorio nacional. Con sólida experiencia en procesos de fortalecimiento de capacidades, desarrollo de servicios y estrategias para la gestión sostenible del recurso hídrico, ha liderado procesos de promoción de la igualdad de género en comunidades y actualmente coordina la Red de Gestoras Comunitarias del Agua.",
+     "tipo": "colaborador"
+  }
+]

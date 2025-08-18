@@ -1,0 +1,151 @@
+.custom-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    overflow: hidden;
+    background: #0b2540;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(assets/img/logoCAISA.jpg) no-repeat center center / cover;
+    opacity: .55;
+    filter: saturate(1.1);
+}
+
+.hero-servicios::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(assets/img/Hero-servicios.jpg) no-repeat center center / cover;
+    background-size: cover;
+    opacity: .55;
+    filter: saturate(1.1);
+}
+
+.hero-servicios {
+    position: relative;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    overflow: hidden;
+    background: #0b2540;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(60% 60% at 50% 50%, rgba(12, 90, 166, .0) 0%, rgba(6, 22, 38, .75) 100%);
+}
+
+.hero-servicios::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(60% 60% at 50% 50%, rgba(12, 90, 166, .0) 0%, rgba(6, 22, 38, .75) 100%);
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 2
+}
+
+
+.badge-soft {
+    background: rgba(255, 255, 255, .18);
+    border: 1px solid rgba(255, 255, 255, .3);
+    font-weight: 600
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+    border: 4px solid #fff;
+    margin: 0 auto 1rem;
+    background: #f2f2f2;
+    display: block;
+}
+
+.team-role {
+    color: #6c757d;
+    font-size: .95rem;
+}
+
+.video-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.rounded-3xl {
+    border-radius: 1.25rem;
+}
+
+footer {
+    background: #0b2239;
+    color: #d8e3ef;
+}
+
+footer a {
+    color: #d8e3ef;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero::before {
+        background: url(assets/img/logoCAISA.jpg) no-repeat center center / cover;
+    }
+}
+
+.servicio-card {
+margin-top: 20px;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  height: 250px; /* ← más grande */
+  background-color: #f8f9fa; /* fondo claro */
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.2); /* sombra elegante */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.servicio-card h5,
+.servicio-card p {
+  color: #212529; /* texto oscuro */
+}
+.servicio-card .badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.75em;
+}
+.servicio-card:hover {
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  transition: all 0.7s ease;
+}

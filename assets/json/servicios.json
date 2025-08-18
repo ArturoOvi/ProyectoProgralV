@@ -1,0 +1,46 @@
+{
+  "servicios_calidad_agua": [
+    {
+      "id": "1.1.1",
+      "Foto": "assets/img/CO.jpg",
+      "nombre": "Control operativo",
+      "descripcion": "Monitoreo permanente de la calidad del agua para detectar desviaciones y aplicar acciones correctivas.",
+      "elementos_clave": ["Monitoreo continuo", "Acciones correctivas", "Cumplimiento normativo"]
+    },
+    {
+      "id": "1.1.2",
+      "Foto": "assets/img/ANCA.jpg",
+      "nombre": "Análisis de calidad del agua",
+      "descripcion": "Realización de análisis físico-químicos y microbiológicos según los niveles establecidos en la normativa.",
+      "elementos_clave": ["Nivel 1", "Nivel 2", "Nivel 3", "Nivel 4"]
+    },
+    {
+      "id": "1.1.3",
+      "Foto": "assets/img/INFORME.jpg",
+      "nombre": "Reportes semestrales",
+      "descripcion": "Elaboración de reportes técnicos semestrales para el Ministerio de Salud.",
+      "elementos_clave": ["Formato oficial", "Resultados de análisis", "Plan de acciones", "Firma responsable"]
+    },
+    {
+      "id": "1.1.4",
+      "Foto": "assets/img/PGCO.png",
+      "nombre": "Programa de control de calidad",
+      "descripcion": "Diseño e implementación del programa de control de calidad del agua conforme a la normativa.",
+      "elementos_clave": ["Toma de muestras", "Calendario de muestreo", "Instructivos", "Área de influencia"]
+    },
+    {
+      "id": "1.1.5",
+      "Foto": "assets/img/ASESORIA.jpg",
+      "nombre": "Asesorías en calidad del agua",
+      "descripcion": "Apoyo técnico para cumplir con la legislación y optimizar procesos de calidad del agua.",
+      "elementos_clave": ["Normativa técnica", "Equipos de monitoreo", "Organización del área de calidad"]
+    },
+    {
+      "id": "1.1.6",
+      "Foto": "assets/img/INSUMOS.jpg",
+      "nombre": "Insumos para monitoreo de cloro residual",
+      "descripcion": "Suministro de equipos y capacitación para el control del cloro residual libre.",
+      "elementos_clave": ["Medidores HANNA", "Reactivos", "Capacitación técnica", "Sobres de medición"]
+    }
+  ]
+}

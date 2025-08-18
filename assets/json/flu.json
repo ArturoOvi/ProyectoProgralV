@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Unión de Asociaciones Gestoras por el Ambiente y la Salud",
+        "acronimo": "UNAGUAS",
+        "logo": "assets/img/UNAGUAS.jpg"
+    },
+    {
+        "nombre": "Unión de ASADAS de la Región Central",
+        "acronimo": "UNARECE",
+        "logo": "assets/img/UNARECE.jpg"
+    },
+    {
+        "nombre": "Federación de Asociaciones Administradoras de los Sistemas de Acueducto y Alcantarillado Sanitario del Pacífico Central",
+        "acronimo": "FEDEPACE",
+        "logo": "assets/img/FEDEPACE.jpg"
+    }
+]

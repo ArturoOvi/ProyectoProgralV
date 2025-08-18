@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HidroGeo Consultores | Ingeniería Geotécnica e Hidrogeología</title>
+  <meta name="description" content="Consultora en geotecnia, hidrogeología y obras civiles. Estudios, diseño y supervisión con enfoque en calidad y sostenibilidad." />
+  <meta name="keywords" content="geotecnia, hidrogeología, geología, ingeniería civil, perforación, estudios de suelos, consultoría" />
+  <meta property="og:title" content="HidroGeo Consultores" />
+  <meta property="og:description" content="Ingeniería geotécnica e hidrogeología." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://picsum.photos/1200/630?grayscale" />
+  <link rel="icon" href="https://picsum.photos/seed/logo/64" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <style>
+    :root{
+      --brand:#0c5aa6; /* azul principal */
+      --brand-2:#0b8bd8; /* azul secundario */
+      --accent:#19c37d;  /* acento */
+      --dark:#0b2540;    /* texto oscuro */
+      --light:#f6f9fc;   /* fondos claros */
+    }
+    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; color:var(--dark)}
+    .navbar{box-shadow: 0 6px 20px rgba(0,0,0,.06)}
+    .navbar .nav-link{font-weight:600}
+    .btn-brand{background:var(--brand); color:#fff}
+    .btn-brand:hover{background:#094987;color:#fff}
+    .text-gradient{background: linear-gradient(90deg, var(--brand), var(--brand-2)); -webkit-text-fill-color: transparent;}
+
+    /* Hero */
+    .hero{
+      position:relative; min-height: 82vh; display:grid; place-items:center; color:#fff; overflow:hidden;
+      background:#0b2540;
+    }
+    .hero::before{
+      content:""; position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1581093806997-124204d9fa9d?q=80&w=1974&auto=format&fit=crop') center/cover no-repeat; opacity:.55; filter: saturate(1.1);
+    }
+    .hero::after{
+      content:""; position:absolute; inset:0; background: radial-gradient(60% 60% at 50% 50%, rgba(12,90,166,.0) 0%, rgba(6,22,38,.75) 100%);
+    }
+    .hero-inner{position:relative; z-index:2}
+    .badge-soft{background: rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.3); font-weight:600}
+
+    /* Secciones */
+    section{scroll-margin-top: 84px}
+    .section-title{letter-spacing:.3px}
+    .icon-bullet{width:42px; height:42px; display:inline-grid; place-items:center; border-radius:10px; background:linear-gradient(145deg,var(--brand),var(--brand-2)); color:#fff}
+    .card-service{border:0; border-radius:18px; box-shadow:0 10px 30px rgba(12,90,166,.08)}
+    .card-service .bi{font-size:1.75rem}
+
+    /* Galería proyectos */
+    .project-card{position:relative; border-radius:16px; overflow:hidden}
+    .project-card img{transition: transform .5s ease}
+    .project-card:hover img{transform: scale(1.06)}
+    .project-badge{position:absolute; left:12px; top:12px}
+
+    /* Cinta KPIs */
+    .kpi{border-right:1px dashed rgba(12,90,166,.3)}
+    .kpi:last-child{border-right:0}
+
+    /* Testimonios */
+    .quote{font-size:1.1rem}
+
+    /* Footer */
+    footer a{ color: #e2eefc; text-decoration: none }
+    footer a:hover{ text-decoration: underline }
+
+    /* WhatsApp flotante */
+    .wapp{
+      position:fixed; right:18px; bottom:18px; width:56px; height:56px; border-radius:50%;
+      display:grid; place-items:center; background:#25D366; color:#fff; box-shadow:0 10px 30px rgba(0,0,0,.25); z-index:1030
+    }
+
+    /* Utilidades */
+    .bg-light-soft{background:var(--light)}
+    .bg-brand{background:linear-gradient(90deg,var(--brand),var(--brand-2)); color:#fff}
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="py-1 bg-brand small">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <div><i class="bi bi-geo-alt"></i> San José, Costa Rica</div>
+      <div class="d-flex gap-3">
+        <a class="text-white" href="tel:+50600000000"><i class="bi bi-telephone"></i> +506 0000-0000</a>
+        <a class="text-white" href="mailto:info@hidrogeo.tld"><i class="bi bi-envelope"></i> info@hidrogeo.tld</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio"><span class="text-gradient">HidroGeo</span> Consultores</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-brand ms-lg-3">Cotizar proyecto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="inicio" class="hero">
+    <div class="hero-inner container text-center">
+      <h1 class="display-4 fw-bold">Ingeniería geotécnica e hidrogeología <span class="d-block">para decisiones seguras</span></h1>
+      <p class="lead mt-3 mb-4">Estudios de suelos, monitoreo de aguas subterráneas, diseño de cimentaciones y supervisión de obras con enfoque sostenible.</p>
+      <div class="d-flex gap-3 justify-content-center">
+      </div>
+    </div>
+  </header>
+
+  <!-- Cinta KPIs -->
+  <section class="py-4 bg-light-soft">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3 kpi">
+          <h3 class="mb-0 fw-bold">250+</h3>
+          <small>Proyectos ejecutados</small>
+        </div>
+        <div class="col-6 col-md-3 kpi">
+          <h3 class="mb-0 fw-bold">12</h3>
+          <small>Países de operación</small>
+        </div>
+        <div class="col-6 col-md-3 kpi">
+          <h3 class="mb-0 fw-bold">98%</h3>
+          <small>Satisfacción de clientes</small>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="mb-0 fw-bold">24/7</h3>
+          <small>Monitoreo y soporte</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-6 py-5">
+    <div class="container">
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title fw-bold">Servicios especializados</h2>
+          <p class="text-secondary mb-0">Soluciones integrales desde la investigación hasta la puesta en marcha.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="#contacto" class="btn btn-outline-primary">Solicitar brochure <i class="bi bi-download"></i></a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bullet"><i class="bi bi-water"></i></div>
+              <div>
+                <h5 class="mb-1">Hidrogeología</h5>
+                <p class="mb-2">Exploración y evaluación de acuíferos, pozos, modelación de flujo, aforos y balance hídrico.</p>
+                <ul class="small text-secondary ps-3 mb-0">
+                  <li>Monitoreo de nivel y calidad</li>
+                  <li>Pruebas de bombeo</li>
+                  <li>Permisos y normativa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bullet"><i class="bi bi-geo"></i></div>
+              <div>
+                <h5 class="mb-1">Geotecnia</h5>
+                <p class="mb-2">Estudios de suelos, mecánica de rocas, estabilidad de taludes y diseño de cimentaciones.</p>
+                <ul class="small text-secondary ps-3 mb-0">
+                  <li>SPT, CPTu, perforación y muestreo</li>
+                  <li>Análisis sísmico<br></li>
+                  <li>Mejoramiento de suelos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bullet"><i class="bi bi-building"></i></div>
+              <div>
+                <h5 class="mb-1">Ingeniería civil</h5>
+                <p class="mb-2">Diseño y supervisión de obras: tanques, líneas de conducción, plantas y urbanizaciones.</p>
+                <ul class="small text-secondary ps-3 mb-0">
+                  <li>Estructuras de contención</li>
+                  <li>Gestión de proyectos (PMI)</li>
+                  <li>Interventoría y QA/QC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bullet"><i class="bi bi-motherboard"></i></div>
+              <div>
+                <h5 class="mb-1">Instrumentación & monitoreo</h5>
+                <p class="mb-2">Redes de sensores, piezómetros, inclinómetros, telemetría y tableros de control.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bullet"><i class="bi bi-cloud-check"></i></div>
+              <div>
+                <h5 class="mb-1">Ambiental</h5>
+                <p class="mb-2">Diagnóstico, permisos, manejo de aguas, remediación y cierres técnicos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-service h-100 p-3">
+            <div class="d-flex align-items-start gap-3">
+              <div class="icon-bullet"><i class="bi bi-mortarboard"></i></div>
+              <div>
+                <h5 class="mb-1">Capacitación</h5>
+                <p class="mb-2">Cursos a la medida para equipos técnicos y autoridades reguladoras.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded-4 shadow" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1976&auto=format&fit=crop" alt="Equipo de ingeniería en campo" />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Nos mueve la ciencia y la seguridad</h2>
+          <p>Combinamos experiencia local con estándares internacionales para entregar estudios confiables y diseños optimizados. Nuestro enfoque es <strong>técnico, transparente y responsable</strong> con el ambiente.</p>
+          <div class="row g-3 mt-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-patch-check-fill text-primary"></i><span>Colegiados y certificados</span></div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-clipboard2-data text-primary"></i><span>Laboratorio aliado</span></div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-shield-lock text-primary"></i><span>Gestión HSEQ</span></div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2"><i class="bi bi-globe-americas text-primary"></i><span>Cobertura regional</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-5 bg-light-soft">
+    <div class="container">
+      <div class="d-flex justify-content-between flex-wrap align-items-end mb-4">
+        <div>
+          <h2 class="fw-bold">Proyectos destacados</h2>
+          <p class="text-secondary mb-0">Una muestra de estudios y obras en industria, energía e infraestructura.</p>
+        </div>
+        <div class="mt-3 mt-lg-0">
+          <a class="btn btn-outline-primary" href="#contacto"><i class="bi bi-folder2-open"></i> Ver portafolio completo</a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <img class="w-100" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1974&auto=format&fit=crop" alt="Estudio de suelos en planta industrial" />
+            <span class="badge bg-primary project-badge">Geotecnia</span>
+          </div>
+          <h6 class="mt-2 mb-0">Estudio geotécnico para planta industrial</h6>
+          <small class="text-secondary">Costa Rica · 2024</small>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <img class="w-100" src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=1974&auto=format&fit=crop" alt="Monitoreo hidrogeológico" />
+            <span class="badge bg-success project-badge">Hidrogeología</span>
+          </div>
+          <h6 class="mt-2 mb-0">Red de pozos de monitoreo y balance hídrico</h6>
+          <small class="text-secondary">Panamá · 2023</small>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <img class="w-100" src="https://images.unsplash.com/photo-1536311312987-d84c18bd9fdd?q=80&w=1974&auto=format&fit=crop" alt="Estabilidad de taludes" />
+            <span class="badge bg-warning text-dark project-badge">Obras civiles</span>
+          </div>
+          <h6 class="mt-2 mb-0">Estabilidad de taludes y obras de contención</h6>
+          <small class="text-secondary">Nicaragua · 2022</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+  <section id="clientes" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <h2 class="fw-bold">Confían en nosotros</h2>
+          <p class="text-secondary">Trabajamos con industria, desarrolladores, utilities y sector público.</p>
+          <div class="mt-3">
+            <figure class="mb-3">
+              <blockquote class="blockquote quote">“El respaldo técnico y la comunicación del equipo hizo la diferencia en la toma de decisiones del proyecto.”</blockquote>
+              <figcaption class="blockquote-footer">Gerente de Proyectos, <cite>Sector Energía</cite></figcaption>
+            </figure>
+            <figure>
+              <blockquote class="blockquote quote">“Cumplieron plazos exigentes con calidad de datos y reportes impecables.”</blockquote>
+              <figcaption class="blockquote-footer">Jefa de Ingeniería, <cite>Infraestructura</cite></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="row row-cols-2 row-cols-md-3 g-3">
+            <div class="col"><div class="p-4 rounded-4 border text-center">Logo 1</div></div>
+            <div class="col"><div class="p-4 rounded-4 border text-center">Logo 2</div></div>
+            <div class="col"><div class="p-4 rounded-4 border text-center">Logo 3</div></div>
+            <div class="col"><div class="p-4 rounded-4 border text-center">Logo 4</div></div>
+            <div class="col"><div class="p-4 rounded-4 border text-center">Logo 5</div></div>
+            <div class="col"><div class="p-4 rounded-4 border text-center">Logo 6</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5 bg-light-soft">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Conversemos sobre tu proyecto</h2>
+          <p class="text-secondary">Cuéntanos el reto y te proponemos una ruta técnica y clara.</p>
+          <form class="row g-3" action="#" method="post" onsubmit="event.preventDefault(); this.reset(); alert('Gracias, te contactaremos pronto.');">
+            <div class="col-md-6">
+              <label class="form-label">Nombre</label>
+              <input class="form-control" type="text" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input class="form-control" type="email" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label">Empresa (opcional)</label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="col-12">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-between">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="privacidad" required>
+                <label class="form-check-label small" for="privacidad">Acepto la <a href="#">política de privacidad</a></label>
+              </div>
+              <button class="btn btn-brand">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow">
+            <iframe title="Mapa" src="https://maps.google.com/maps?q=San%20Jose%20Costa%20Rica&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+          </div>
+          <div class="mt-3">
+            <div class="d-flex align-items-center gap-2"><i class="bi bi-telephone"></i> <a href="tel:+50600000000">+506 0000-0000</a></div>
+            <div class="d-flex align-items-center gap-2"><i class="bi bi-envelope"></i> <a href="mailto:info@hidrogeo.tld">info@hidrogeo.tld</a></div>
+            <div class="d-flex align-items-center gap-2"><i class="bi bi-clock"></i> Lun–Vie 8:00–17:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5 class="fw-bold">HidroGeo Consultores</h5>
+          <p class="mb-2">Ingeniería en geotecnia, hidrogeología y obras civiles.</p>
+          <small>© <span id="year"></span> HidroGeo. Todos los derechos reservados.</small>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold">Servicios</h6>
+          <ul class="list-unstyled">
+            <li><a href="#servicios">Hidrogeología</a></li>
+            <li><a href="#servicios">Geotecnia</a></li>
+            <li><a href="#servicios">Ingeniería civil</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-bold">Boletín</h6>
+          <form class="d-flex gap-2" onsubmit="event.preventDefault(); this.reset(); alert('¡Gracias por suscribirte!');">
+            <input type="email" required class="form-control" placeholder="Tu email" />
+            <button class="btn btn-light">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+      <hr class="border-light mt-4 mb-3" />
+      <div class="d-flex justify-content-between flex-wrap gap-2 small">
+        <div>Políticas · Términos · Cookies</div>
+        <div class="d-flex gap-3">
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp CTA -->
+  <a class="wapp" href="https://wa.me/50600000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp" style="font-size:1.6rem"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll suave para anclas internas
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      })
+    });
+  </script>
+</body>
+</html>

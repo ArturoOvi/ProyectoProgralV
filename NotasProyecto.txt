@@ -1,0 +1,63 @@
+Mínimo encabezado, barra de navegación, contenido principal, pie de pagina.
+
+- Pagina Principal menu, servicios, contacto, nosotros, proyectos.
+- Historia, servicios descritos con imágenes.
+- Pagina de información contacto.
+- Acerca de (miembros)
+- Geolocalización API Google
+- Audio Multimedia desde el
+- Vínculos bien hechos.
+- Diseño General
+Plantilla Bootstrap
+Respetar paleta de colores
+
+Incluir un carrusel
+
+Redes sociales en el footer (preguntar)
+
+Botón para traducir la pagina.
+
+En el formulario que valide los espacios y se envié al correo.
+
+Cargar y mostrar servicios desde un json.
+
+Noticias en carrusel.
+
+Consumo de API Rest externo
+que agregue alguna funcionalidad adicional a la página.
+
+Documentar, hacer al final.
+
+
+Nosotros (Arturo)
+
+Quines somos (video)
+Quienes trabajan (8)
+-Junta directiva
+-Personal administrativo y operativo
+
+Servicios (Jeyko)
+
+Clientes 
+
+
+Footer
+- Informacion Redes sociales
+. Constacto
+- Ubicacion
+- Autores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
