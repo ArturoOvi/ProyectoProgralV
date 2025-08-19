@@ -3,7 +3,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Cargar equipo desde JSON externo
 $(document).ready(function(){
-  $.getJSON("assets/json/colaboradores.json", function(data){
+  $.getJSON("https://raw.githubusercontent.com/ArturoOvi/Colaboradores/refs/heads/master/colaboradores.json", function(data){
     
     // contenedores distintos en tu HTML
     let juntaContainer = $("#junta-container");

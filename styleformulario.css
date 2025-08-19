@@ -1,0 +1,88 @@
+/* Fondo suave */
+.bg-light-soft {
+  background-color: #f8f9fa;
+}
+
+/* Contenedor del formulario */
+.formulario-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos */
+.formulario-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.formulario-container p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Campos del formulario */
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botón */
+#button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#button:hover {
+  background-color: #0056b3;
+}
+
+/* Mapa */
+#map {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formulario-container {
+    padding: 20px;
+  }
+
+  .formulario-container h2 {
+    font-size: 24px;
+  }
+}
